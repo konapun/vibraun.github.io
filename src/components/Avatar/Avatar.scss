@@ -1,0 +1,11 @@
+$line: rgb(171, 78, 78);
+$border-width: 1px;
+.avatar {
+}
+
+.avatar__image {
+  height: 100px;
+  width: 100px;
+  border: $border-width solid $line;
+  border-radius: 100%;
+}
