@@ -1,11 +1,15 @@
 $line: rgb(171, 78, 78);
 $border-width: 1px;
-.avatar {
-}
+$avatar-background-color: #fff;
 
-.avatar__image {
-  height: 100px;
-  width: 100px;
-  border: $border-width solid $line;
-  border-radius: 100%;
+.avatar {
+
+  &__image {
+    height: 100px;
+    width: 100px;
+    padding: 6px;
+    // border: $border-width solid $line;
+    border-radius: 100%;
+    background-color: $avatar-background-color;
+  }
 }

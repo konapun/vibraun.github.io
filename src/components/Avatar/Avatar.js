@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { PropTypes } from 'react'
 import './Avatar.scss'
 
 export const Avatar = ({ src }) => (
@@ -8,7 +8,7 @@ export const Avatar = ({ src }) => (
 )
 
 Avatar.propTypes = {
-  src: React.PropTypes.element.isRequired
+  src: PropTypes.string.isRequired
 }
 
 export default Avatar

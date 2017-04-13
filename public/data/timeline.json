@@ -1,0 +1,46 @@
+{
+  "data": [
+    {
+      "year": 2014,
+      "points": [
+        {
+          "label": "Point 1"
+        },
+        {
+          "label": "Point 2"
+        },
+        {
+          "label": "Point 3"
+        }
+      ]
+    },
+    {
+      "year": 2015,
+      "points": [
+        {
+          "label": "Point 1"
+        },
+        {
+          "label": "Point 2"
+        },
+        {
+          "label": "Point 3"
+        }
+      ]
+    },
+    {
+      "year": 2016,
+      "points": [
+        {
+          "label": "Point 1"
+        },
+        {
+          "label": "Point 2"
+        },
+        {
+          "label": "Point 3"
+        }
+      ]
+    }
+  ]
+}

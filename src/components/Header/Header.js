@@ -1,44 +1,20 @@
-import React from 'react'
-import { IndexLink, Link } from 'react-router'
-import Avatar from '../Avatar'
+import React, { PropTypes } from 'react'
 import './Header.scss'
+import Navigation from '../Navigation'
 
-export const Header = () => (
-  <div className='header'>
-    <ul className='header__links header__links--left'>
-      <li>
-        <IndexLink to='/' activeClassName='route--active'>
-          Home
-        </IndexLink>
-      </li>
-      <li>
-        <Link to='/professional' activeClassName='route--active'>
-          Professional
-        </Link>
-      </li>
-      <li>
-        <Link to='/personal' activeClassName='route--active'>
-          Personal
-        </Link>
-      </li>
-    </ul>
+export const Header = ({ avatar, leftLinks, rightLinks, children }) => (
+  <header className='header'>
+    <Navigation avatar={avatar} leftLinks={leftLinks} rightLinks={rightLinks} />
 
-    <ul className='header__links header__links--center'>
-      <li>
-        <Link to='/' activeClassName='route--active'>
-          <Avatar src='img/avatar.jpg' />
-        </Link>
-      </li>
-    </ul>
-
-    <ul className='header__links header__links--right'>
-      <li>
-        <Link to='/contact' activeClassName='route--active'>
-          Contact me
-        </Link>
-      </li>
-    </ul>
-  </div>
+    { children }
+  </header>
 )
+
+Header.propTypes = {
+  avatar: PropTypes.string,
+  leftLinks: PropTypes.array,
+  rightLinks: PropTypes.array,
+  children: PropTypes.node
+}
 
 export default Header
